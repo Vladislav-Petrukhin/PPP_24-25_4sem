@@ -1,0 +1,33 @@
+[2025-03-28 13:41:32,460] INFO - Сервер запущен на 127.0.0.1:9090
+[2025-03-28 13:55:12,685] INFO - Сервер запущен на 127.0.0.1:9090
+[2025-03-28 13:56:10,587] INFO - Подключился клиент: ('127.0.0.1', 43140)
+[2025-03-28 13:56:20,433] WARNING - Клиент ('127.0.0.1', 43140) не прошёл аутентификацию.
+[2025-03-28 13:59:22,190] INFO - Подключился клиент: ('127.0.0.1', 43248)
+[2025-03-28 13:59:33,626] WARNING - Клиент ('127.0.0.1', 43248) не прошёл аутентификацию.
+[2025-03-28 14:03:19,321] INFO - Подключился клиент: ('127.0.0.1', 9118)
+[2025-03-28 14:04:19,227] ERROR - Ошибка при обработке клиента ('127.0.0.1', 9118): Неверный формат запроса: telnet 127.0.0.1 9090
+Traceback (most recent call last):
+  File "C:\Users\Владислав\PycharmProjects\pythonProject3\server\client_handler.py", line 56, in run
+    response = self._process_command(data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владислав\PycharmProjects\pythonProject3\server\client_handler.py", line 101, in _process_command
+    query_info = self.sql_parser.parse(command_str)  # Возвращает структуру dict
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владислав\PycharmProjects\pythonProject3\server\sql_parser.py", line 22, in parse
+    raise ValueError(f"Неверный формат запроса: {query}")
+ValueError: Неверный формат запроса: telnet 127.0.0.1 9090
+[2025-03-28 14:04:26,255] INFO - Подключился клиент: ('127.0.0.1', 9154)
+[2025-03-28 14:09:20,229] ERROR - Ошибка при обработке клиента ('127.0.0.1', 9154): Неверный формат запроса: {
+Traceback (most recent call last):
+  File "C:\Users\Владислав\PycharmProjects\pythonProject3\server\client_handler.py", line 56, in run
+    response = self._process_command(data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владислав\PycharmProjects\pythonProject3\server\client_handler.py", line 101, in _process_command
+    query_info = self.sql_parser.parse(command_str)  # Возвращает структуру dict
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владислав\PycharmProjects\pythonProject3\server\sql_parser.py", line 22, in parse
+    raise ValueError(f"Неверный формат запроса: {query}")
+ValueError: Неверный формат запроса: {
+[2025-04-07 12:02:33,341] INFO - Сервер запущен на 127.0.0.1:9090
+[2025-04-07 12:03:28,721] INFO - Сервер запущен на 127.0.0.1:9090
+[2025-04-07 12:03:39,005] INFO - Подключился клиент: ('127.0.0.1', 17260)
