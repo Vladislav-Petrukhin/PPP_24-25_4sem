@@ -20,29 +20,29 @@
 
 ## Структура проекта
 
-lab/
-|-- data/
-|   |-- users/
-|   |   \-- users.csv
-|   \-- products/
-|       \-- products.csv
-|-- main.py
-|-- requirements.txt
-|-- server/
-|   |-- __init__.py
-|   |-- server.py
-|   |-- client_handler.py
-|   |-- sql_parser.py
-|   |-- csv_manager.py
-|   |-- cache_manager.py
-|   |-- auth_manager.py
-|   |-- logger.py
-|   \-- utils.py
-\-- client/
-    |-- __init__.py
-    |-- client.py
-    |-- logger.py
-    \-- utils.py
+<h3>lab/</h3>
+<h4>├── data/</h4>
+<h4>│   ├── users/</h4>
+<h4>│   │   └── users.csv</h4>
+<h4>│   └── products/</h4>
+<h4>│       └── products.csv</h4>
+<h4>├── main.py</h4>
+<h4>├── requirements.txt</h4>
+<h4>├── server/</h4>
+<h4>│   ├── __init__.py</h4>
+<h4>│   ├── server.py</h4>
+<h4>│   ├── client_handler.py</h4>
+<h4>│   ├── sql_parser.py</h4>
+<h4>│   ├── csv_manager.py</h4>
+<h4>│   ├── cache_manager.py</h4>
+<h4>│   ├── auth_manager.py</h4>
+<h4>│   ├── logger.py</h4>
+<h4>│   └── utils.py</h4>
+<h4>└── client/</h4>
+<h4>    ├── __init__.py</h4>
+<h4>    ├── client.py</h4>
+<h4>    ├── logger.py</h4>
+<h4>    └── utils.py</h4>
 
 
 - **main.py** – основной файл, точка входа. Запускает либо сервер, либо клиент (через аргумент `--mode`).
