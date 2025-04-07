@@ -20,29 +20,7 @@
 
 ## Структура проекта
 
-lab/
-├── data/
-│   ├── users/
-│   │   └── users.csv
-│   └── products/
-│       └── products.csv
-├── main.py
-├── requirements.txt
-├── server/
-│   ├── __init__.py
-│   ├── server.py
-│   ├── client_handler.py
-│   ├── sql_parser.py
-│   ├── csv_manager.py
-│   ├── cache_manager.py
-│   ├── auth_manager.py
-│   ├── logger.py
-│   └── utils.py
-└── client/
-    ├── __init__.py
-    ├── client.py
-    ├── logger.py
-    └── utils.py
+<pre> lab/ ├── data/ │ ├── users/ │ │ └── users.csv │ └── products/ │ └── products.csv ├── main.py ├── requirements.txt ├── server/ │ ├── __init__.py │ ├── server.py │ ├── client_handler.py │ ├── sql_parser.py │ ├── csv_manager.py │ ├── cache_manager.py │ ├── auth_manager.py │ ├── logger.py │ └── utils.py └── client/ ├── __init__.py ├── client.py ├── logger.py └── utils.py </pre>
 
 - **main.py** – основной файл, точка входа. Запускает либо сервер, либо клиент (через аргумент `--mode`).
 - **data/** – папка с данными (CSV). Каждая подпапка – это “таблица”.
