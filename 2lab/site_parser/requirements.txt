@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+alembic
+pydantic
+passlib[bcrypt]
+python-jose[cryptography]
+python-dotenv
+celery[redis]
+redis
+aiohttp
+networkx
+lxml
